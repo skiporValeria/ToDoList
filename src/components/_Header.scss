@@ -1,0 +1,39 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #462730CC;
+
+    span {
+        color: #FFFBFF;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+
+    .header-btn {
+        display: flex;
+        gap: 80px;
+        .add-div, .delete-div  {
+            a {
+                display: flex;
+                gap: 12px;
+                align-items: center;
+            }
+
+
+            p {
+                color: #ad6361;
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+    }
+    .list-btn {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        .info {
+            padding-top: 5px;
+        }
+    }
+}

@@ -1,0 +1,143 @@
+.TaskList {
+    margin-top: 50px;
+
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 30px;
+        position: relative;
+        margin-top: 15px;
+        color: #2b100e;
+        font-size: 24px;
+        font-weight: 400;
+        background-color: #c39b9a88;
+        border: 2 px solid #3a2928;
+        border-radius: 30px;
+
+
+
+        .task-div {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+
+            button,
+            span {
+                display: flex;
+
+            }
+
+        }
+
+
+        .options-btn {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            button {
+                display: flex;
+
+
+            }
+
+        }
+
+
+    }
+
+
+}
+
+
+.hidden-menu {
+    position: absolute;
+    left: 98%;
+    top: -10%;
+
+    ul {
+        background-color: #46344a;
+        border-radius: 30%;
+        padding: 10px 15px;
+
+        li {
+            border: none;
+            gap: 5px;
+            background-color: inherit;
+            padding: 0;
+            margin: 0;
+            color: #ffffff60;
+            justify-content: start;
+            margin-bottom: 5px;
+        }
+    }
+
+}
+
+.hidden-menu::before {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: -7px;
+    transform: translateY(-50%);
+    border-width: 8px 8px 8px 0;
+    border-style: solid;
+    border-color: transparent #46344a transparent transparent;
+}
+
+
+
+
+.add-task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+
+
+
+    input {
+        flex: 1;
+        border: 3px solid #ad6361;
+        outline: none;
+        border-radius: 30px;
+        padding: 18px 50px;
+        width: 100%;
+
+        &::placeholder {
+            font-size: 20px;
+            font-weight: 400;
+            color: #503837;
+        }
+    }
+
+    button {
+        border: 4px solid #ad6361;
+        outline: none;
+        border-radius: 30px;
+        background-color: #ad6361;
+        padding: 15px 80px;
+        margin-left: -80px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+
+.lack-of-task {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 70px;
+
+    span {
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+        color: #feede1cb;
+
+    }
+}
